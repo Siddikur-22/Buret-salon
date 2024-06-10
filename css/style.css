@@ -1,0 +1,267 @@
+@import url(../css/clash-display.css);
+
+:root {
+    --c-dark: #212529;
+    --c-brand: #4e57d4;
+    --c-brand-light: #6970dd;
+    --c-brand-rgb: rgb(83, 93, 224);
+    --c-body: #727272;
+    --font-base: "ClashDisplay", sans-serif;
+    --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+    --transition: all 0.5s ease;
+
+}
+
+body {
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: var(--c-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: 600;
+    color: var(--c-dark);
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--c-brand);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--c-brand-light);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* navbar */
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.section-padding {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+
+.theme-shadow {
+    box-shadow: var(--box-shadow);
+}
+
+/* image zomm */
+.image-zoom{
+    position: relative;
+    overflow: hidden;
+
+}
+.image-zoom-warpper{
+ overflow: hidden;
+ position: relative;
+
+}
+.image-zoom-warpper img{
+    transform-origin: var(--transition);
+}
+.image-zoom:hover .image-zoom-warpper img{
+ transform: scale(1.1);
+}
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--c-dark);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--c-brand);
+    
+}
+
+.navbarNav {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 24px;
+}
+
+
+
+.btn-brand {
+    background-color: var(--c-brand);
+    border-color: var(--c-brand);
+    color: white;
+    border-radius: 0;
+
+}
+.icon{
+    color: black;
+}
+
+.btn-light {
+
+    border-radius: 0;
+}
+
+.btn-brand:hover {
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
+    color: white;
+}
+
+/* banner */
+
+/* navbar */
+
+/* hero */
+.carousel-item img {
+   
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+/* carousel */
+
+.c-item{
+height: 650px;
+
+}
+
+.c-img{
+filter: brightness(0.6);
+}
+
+
+
+/* section titile */
+.section-title {
+    margin-bottom: 60px;
+}
+
+.section-title .line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin: 16px auto 24px auto;
+}
+
+.section-title p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.iconbox {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bbbbd03d;
+    color: var(--c-brand);
+    font-size: 34px;
+    flex: none;
+}
+
+/* service  */
+.service {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.service::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #4e57d4;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: var(--transition);
+
+
+}
+
+.service:hover::after {
+    width: 100%;
+    height: 100%;
+    background: var(--c-brand);
+    z-index: -1;
+}
+
+.service:hover h5,
+.service:hover p {
+    color: white;
+
+}
+
+.service:hover .iconbox {
+    background-color: rgba(254, 254, 254, 0.08);
+    color: white;
+}
+
+/* counter */
+#counter {
+   background-color: rgb(230, 234, 237);
+    background-position: center;
+    background-size: cover;
+}
+
+/* protfolio item */
+
+.protfilo .iconbox{
+    background-color: var(--c-brand);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50% -50%);
+    opacity: 0;
+}
+.protfilo:hover .iconbox{
+    opacity: 1;
+    top: 50%;
+
+}
+/* review */
+.review-head{
+    position: relative;
+}
+.review-head::after{
+    content: "";
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    background-color:white;
+    transform: rotate(45deg);
+}
+
+/* get to know */
+
+
+
+.book{
+    background-color: #8cbceb8f;
+
+}
+
